@@ -7,14 +7,14 @@ gems:
 permalink:        pretty
 
 # Setup
-title:            ShellDone
+title:            五五09
 tagline:          'Tech & Life'
 description:      '<a href="https://twitter.com/gaoxudong" target="_blank">@gaoxudong</a><p>Blogger of ShellDone.Com</p>'
-url:              http://shelldone.com
-domain:            ShellDone.Com
+url:              http://snsogbl.github.io/snso
+domain:           http://snsogbl.github.io/snso
 author:
-  name:           'gaoxudong'
-  url:            https://twitter.com/gaoxudong
+  name:           'yangjie'
+  url:            
 
 paginate:         5
 

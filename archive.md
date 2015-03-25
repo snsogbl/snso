@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Archives
+title: 目录
 permalink: /archive/
 ---
 {% assign post_year1 = "" %}

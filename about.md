@@ -1,11 +1,8 @@
 ---
 layout: page
-title: About
+title: 关于我
 ---
 
-  Hello there! Thanks for visiting <a href="http://shelldone.com">ShellDone.Com</a>  
-  The main focus of this site is technology and life.  
-  All contents is written by gaoxudong.  
-  You can find me on twitter (@gaoxudong) or weibo(@九天之東)
+  嗨，我是杨杰(@五五09)，在IOS开发中摸爬滚打了几年。目前创业阶段正在做一款旅游行程单管理工具(应用名就不说了，不打广告)。
 
-Thanks for reading!
+感谢你的访问!

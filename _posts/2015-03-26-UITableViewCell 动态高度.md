@@ -41,7 +41,7 @@ title: 动态调整UITableViewCell高度的实现方法
 
 代码
 
-```c
+```obj-c
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";

@@ -85,8 +85,3 @@ return 0;
 
 
 
-{% codeblock [lang:language] [title] [url] [link text] %}
- nslog();
-{% endcodeblock %}
-
-

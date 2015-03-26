@@ -8,12 +8,14 @@ title: 动态调整UITableViewCell高度的实现方法
 
 贴一个简单代码
 
-	-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+```c
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat cellH = 0.0;
     NSString *str = [array objectAtIndex:indexPath.row];
     cellH = 0.0 + 0.0;//这里要通过文字计算出文字高度 再加上文字的上下边距
     return cellH;
     }
+```
 
 
 
@@ -26,20 +28,21 @@ title: 动态调整UITableViewCell高度的实现方法
 
 贴一个实现代码
 
-	-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+```c
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     CGFloat cellH = 0.0;
     UITableViewCell *cell = [self tableView:tableView cellForRowAtIndexPath:indexPath];
     cellH = cell.frame.size.height;
     return cellH;
     }
+```
 
 
 
 代码
 
-
-<pre>
-	- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+```c
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -69,19 +72,9 @@ title: 动态调整UITableViewCell高度的实现方法
     
     return cell;
 }
-</pre>
-
-
-``` c
-
-#include <stdio.h>
-int main(void)
-{
-printf("hello markdown\n");
-return 0;
-}
-
 ```
+
+
 
 
 

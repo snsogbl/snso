@@ -22,9 +22,10 @@ title: 动态调整UITableViewCell高度的实现方法
 ###现在
 现在有简单办法了，再也不用通过数据源算高度
 
+* 最重要一点要设置estimatedRowHeight属性 给cell设一个预算高度(非常重要)
 * heightForRowAtIndexPath的回调中拿到cell，返回cell高度
 * cellForRowAtIndexPath 代码中设置cell高度
-* 最重要一点要设置estimatedRowHeight属性 给cell设一个预算高度(非常重要)
+
 
 贴一个实现代码
 

@@ -3,7 +3,7 @@ layout: post
 title: 动态调整UITableViewCell高度的实现方法
 --- 
 
-####前提
+###前提
 以前实现cell的动态高度觉得好麻烦，总是要先拿到数据，再根据数据算高度，再加上组件的上下边距，如果一个cell中有多个动态高度组件更加麻烦。
 
 贴一个简单代码
@@ -20,7 +20,7 @@ title: 动态调整UITableViewCell高度的实现方法
 
 
 ###现在
-现在有简单办法了，再也不能通过数据源算高度
+现在有简单办法了，再也不用通过数据源算高度
 
 * heightForRowAtIndexPath的回调中拿到cell，返回cell高度
 * cellForRowAtIndexPath 代码中设置cell高度
@@ -74,8 +74,6 @@ title: 动态调整UITableViewCell高度的实现方法
     return cell;
 }
 </pre>
-
-<p>{{ page.date | date_to_string }}</p>
 
 
 

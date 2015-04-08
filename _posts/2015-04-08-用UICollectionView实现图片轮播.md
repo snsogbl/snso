@@ -1,0 +1,43 @@
+---
+layout: post
+title: 使用UICollectionView实现图片轮播
+--- 
+
+最近项目中要一个图片展示组件，最开始想到是用UIScrollView组件，用UIScrollView就有几个问题：
+
+* 展示的是网络图片，用UIScrollView图片会同时加载，效果不理想。
+* 如果展示的图片很多，UIScrollView也会有内存问题
+
+最终选择UICollectionView。用起来很方便，最终支持本地图片、网络图片。
+看图：
+![](https://camo.githubusercontent.com/68691169083300fc2929c6698ed6c77a8aba7c8e/68747470733a2f2f6661726d382e737461746963666c69636b722e636f6d2f373635302f31373035303034343739365f376662633566613231325f6f5f642e676966)
+
+##如何实现
+####自动滚动
+用一个NSTimer，执行滚动下一页操作。
+要注意的是需要在
+	
+	//计时器暂停
+	- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+	//计时器开始
+	- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+	
+####轮播
+1.将数据源的个数乘以100返回给代理
+<pre>
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    int row = 0;
+    row = [array count]*100;
+    return row;
+}
+</pre>
+2.获取数据源对应的对象
+<pre>
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    int itemIndex = indexPath.item % [array count];
+    [array objectAtIndex:itemIndex];
+    ...
+}
+</pre>
+
+具体代码 github:[https://github.com/snsogbl/CustomPhotosBrowse](https://github.com/snsogbl/CustomPhotosBrowse)

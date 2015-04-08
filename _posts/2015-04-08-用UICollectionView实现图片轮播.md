@@ -25,7 +25,7 @@ title: 使用UICollectionView实现图片轮播
 <pre>
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     int row = 0;
-    row = [array count]\*100;
+    row = [array count]*100;
     return row;
 }
 </pre>

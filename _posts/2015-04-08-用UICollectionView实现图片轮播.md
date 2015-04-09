@@ -21,14 +21,16 @@ title: 使用UICollectionView实现图片轮播
 	- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 	
 ####轮播
-1.将数据源的个数乘以100返回给代理\*
+
+1.将数据源的个数乘以100返回给代理
 <pre>
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     int row = 0;
-    row = [array count]*100;
+    row = [array count] * 100;
     return row;
 }
 </pre>
+
 2.获取数据源对应的对象
 <pre>
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{

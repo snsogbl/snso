@@ -9,7 +9,7 @@ permalink:        pretty
 # Setup
 title:            五五09
 tagline:          'Blog'
-description:      '<a href="http://www.weibo.com/u/2023265090" target="_blank">@五五09</a><p>Blogger of snso.cc</p>'
+description:      '<a href="http://www.weibo.com/u/2023265090" target="_blank">@五五09</a><p>Blogger of http://snsogbl.github.io/snso</p>'
 url:              http://snsogbl.github.io/snso/
 domain:           http://snsogbl.github.io/snso/
 author:
@@ -24,4 +24,4 @@ version:          1.0.0
 #github:
 #  repo:           https://github.com/shelldonegao/blog
 
-baseurl:		  
+baseurl:		  /snso
